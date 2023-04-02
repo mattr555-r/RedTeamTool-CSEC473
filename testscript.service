@@ -1,6 +1,8 @@
 [Unit]
 Description=Test service for persistence
 
+# Below is what will be executed when this service runs
+
 [Service]
 ExecStart=/usr/bin/testscript.sh
 
