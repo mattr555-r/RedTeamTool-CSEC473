@@ -35,4 +35,8 @@ do
  echo "roott:redteam" | chpasswd
  echo 'roott  ALL=(ALL:ALL) ALL' >> /etc/sudoers
  
+ useradd -m "student"
+ echo "student:redteam" | chpasswd
+ echo 'student  ALL=(ALL:ALL) ALL' >> /etc/sudoers
+ 
 done
