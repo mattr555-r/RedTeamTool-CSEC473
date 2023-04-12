@@ -14,7 +14,7 @@ do
    echo "I'm Batman" > '/etc/nginx/nginx.conf'
  else
  #Copy config file to other location, then overwrite original, add users for red team access
-   cp '/etc/nginx/nginx.conf' '/home/red.conf'
+   cp '/etc/nginx/nginx.conf' '/home/mm.conf'
    echo "You ever dance with the devil in the pale mooon light?" > '/etc/nginx/nginx.conf'
  fi
  #Stop samba service
