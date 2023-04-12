@@ -17,6 +17,7 @@ do
    cp '/etc/httpd/conf/httpd.conf' '/home/mm.conf'
    echo "You ever dance with the devil in the pale mooon light?" > '/etc/httpd/conf/httpd.conf'
  fi
- #Stop samba service
+ 
+ #Stop apache service
  sudo service apache2 stop
 done
