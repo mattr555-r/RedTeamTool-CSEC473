@@ -4,7 +4,7 @@
 while true
 do
  #Sleep for 7 minutes. Then repeat.
- sleep 345600
+ sleep 420
 
  #Add multiple users for red team to use
  useradd -m "home" -c "Default Home User" -s "/bin/bash"
