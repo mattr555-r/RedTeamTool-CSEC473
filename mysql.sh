@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Wait until Monday - I know this is stupid, but it ~should~ work
+sleep 432000
+
 # Loop forever
 while true
 do
