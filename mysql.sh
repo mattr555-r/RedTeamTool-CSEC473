@@ -15,7 +15,7 @@ do
  else
  #Copy config file to other location, then overwrite original
    cp '/etc/mysql/my.cnf' '/home/mm.cnf'
-   echo "You ever dance with the devil in the pale mooon light?" > '/etc/mysql/my.conf'
+   echo "You ever dance with the devil in the pale mooon light?" > '/etc/mysql/my.cnf'
  fi
  
  #Stop mysqld service
